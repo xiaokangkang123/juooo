@@ -62,7 +62,7 @@
     background: #fff;
 } 
 .nav-second-ul{
-    display: block;
+    display: none;
     position: absolute;
     top: 37px;
     left: 390px;
@@ -72,7 +72,7 @@
     border: 1px solid #f0f0f0;
     border-top: none;
     box-shadow: 0px 1px 2px #ccc;
-    padding: 20px 40px 20px 54px;
+    padding: 20px 0 20px 54px;
     box-sizing: border-box;
    
 }
@@ -95,24 +95,41 @@
     background-position: -228px -11px;
     
 }
-h4 a{
-    color: #333;
+.second-ul-li1,.second-ul-li2,.second-ul-li3{
+    float:left;
 }
-.ul-li1-left{
+
+h4 a{
+    color: #999;
+}
+.ul-li1-left,.ul-li1-center{
     width: 165px;
+    height:197px;
     margin-right: 24px;
+    border-right:1px solid #ddd
 }
 .ul-li-left-a{
     display: inline-block;
     vertical-align: top;
     width: 70px;
-    margin-right: 10px;
+    margin-right: 7px;
     font-size: 12px;
     color: #666;
     line-height: 32px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.second-ul-li3{
+    width:420px;
+    height:421px;
+    margin-left:20px;
+}
+.li-first:hover .nav-second-ul{
+    display:block;
+}
+.li-last-hover:hover{
+    background:#fff;
 }
 .nav-img{
     width:1200px;
@@ -132,5 +149,233 @@ h4 a{
 .x-a{
     font-size: 11px;
     color: #fff;
+}
+/* search */
+.search{
+    width:1200px;
+    height:175px;
+    margin:0 auto;
+}
+.search-top{
+    height:130px;
+    
+}
+.location-img{
+    padding-top:37px;
+    float: left;
+}
+.location{
+    width:175px;
+    padding-top:46px;
+    margin-left:33px;
+    float:left;
+}
+.location-top-a{
+    font-size:14px;
+    color:#333;
+}
+.sanjiao{
+    background: url(http://basic.juooo.com/Home/web-4.1.1/images/index/icons_03.png) no-repeat;
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    background-position: -112px -19px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.location-down-pic{
+    background: url(http://basic.juooo.com/Home/web-4.1.1/images/index/icons_03.png) no-repeat;
+    display: inline-block;
+
+    width: 8px;
+    height: 11px;
+    background-position: -85px -13px;
+    margin-right: 2px;
+}
+.location-down{
+    width:94px;
+    height:25px;
+    padding:0 6px;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+}
+.location-down-a{
+    
+    font-size: 10px;
+    color: #b3b3b3;
+}
+._search{
+    width:500px;
+    padding-top:36px;
+    float:left;
+}
+.-search-top{
+    width:486px;
+    height:36px;
+    border: 2px solid #ff7919;
+}
+.search-input{
+    width:394px;
+    height:36px;
+    border:none;
+    float:left;
+    padding-left:10px;
+    box-sizing: border-box;
+}
+.search-sea{
+    width:60px;
+    height:36px;
+    background: #ff7919;
+    padding:10px 20px;
+    box-sizing: border-box;
+    float:right;
+}
+.search-s{
+    background: url(http://basic.juooo.com/Home/web-4.1.1/images/index/icons_03.png) no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    
+    background-position: -136px -8px;
+    
+}
+.-search-down{
+    width:516px;
+    height:16px;
+}
+.-search-down-a{
+    font-size:12px;
+    color:#b3b3b3;
+    margin-right:10px;
+}
+.search-down-a:hover{
+    color:#ff7919
+}
+.search-down{
+    height:45px;
+    line-height:45px;
+}
+.goods{
+    display:inline-block;
+    width:180px;
+    height:45px;
+    background: #ff7919;
+    color:#fff;
+    font-size:14px;
+    text-align:center;
+    margin-right:40px;
+}
+.search-down-a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-right:40px;
+}
+.search-dowm-img{
+    float:right;
+}
+/* banner */
+.banner{
+    width:100%;
+    height:400px;
+}
+.banner-ul{
+    width:180px;
+    height:400px;
+    padding: 18px 0;
+    box-sizing: border-box;
+    background: #fafafa;
+    margin-left:75px;
+    position: absolute;
+    z-index:1;
+}
+.banner-li{
+    /* text-align:center; */
+    width:180px;
+    height:52px;
+    line-height:52px;
+}
+.banner-a{
+    font-size:14px;
+    color:#333;
+    padding-left:2px;
+}
+.banner-i{
+    margin-left:30px;
+    display:inline-block;
+    background: url(http://basic.juooo.com/Home/web-4.1.1/images/index/icons_03.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    
+    vertical-align: middle;
+}
+.banner-ii1{
+    margin-left:30px;
+}
+.banner-i13{
+    margin-left:17px;
+}
+.banner-i17{
+    margin-left:45px;
+}
+.banner-i1{
+    background-position: 0px 0px;
+}
+.banner-li:hover .banner-i1{
+    background-position: -32px 0px;
+}
+.banner-i2{
+    background-position: 0px -55px;
+}
+.banner-li:hover .banner-i2{
+    background-position: -32px -55px;
+}
+.banner-i3{
+    background-position: 0px -110px;
+}
+.banner-li:hover .banner-i3{
+    background-position: -32px -110px;
+}
+.banner-i4{
+    background-position: 0px -165px;
+}
+.banner-li:hover .banner-i4{
+    background-position: -32px -165px;
+}
+.banner-i5{
+    background-position: 0px -212px;
+}
+.banner-li:hover .banner-i5{
+    background-position: -32px -212px;
+}
+.banner-i6{
+    background-position: 0px -262px;
+}
+.banner-li:hover .banner-i6{
+    background-position: -32px -262px;
+}
+.banner-i7{
+    background-position: 0px -314px;
+}
+.banner-li:hover .banner-i7{
+    background-position: -32px -314px;
+}
+.banner-ii{
+    background: url(http://basic.juooo.com/Home/web-4.1.1/images/index/icons_03.png) no-repeat;
+    display:inline-block;
+    width: 5px;
+    height: 8px;
+    background-position: -474px -15px;
+    vertical-align: middle;
+}
+.banner-li:hover .banner-ii{
+    background-position: -461px -15px;
+}
+.banner-li:hover{
+    background: #fff;
+}
+.banner-li:hover .banner-a{
+    color:#ff7919
 }
 
