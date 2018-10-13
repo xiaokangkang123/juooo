@@ -218,6 +218,7 @@ h5 a{
     width:394px;
     height:36px;
     border:none;
+    outline:none;
     float:left;
     padding-left:10px;
     box-sizing: border-box;
@@ -684,7 +685,7 @@ h5 a{
 }
 /* 巡回演出 */
 .tour{
-
+    margin-bottom:40px;
 }
 .tour-p{
     text-align: center;
@@ -755,4 +756,242 @@ h5 a{
 .tour-img-box2:hover .tour-word-box2{
     display:block;
     bottom:0;
+}
+/* tour-con3 */
+.tour-con3{
+    width:454px;
+    height:310px;
+    margin-right: 10px;
+    float: left;
+}
+.tour-con3-top{
+    height:150px;
+    margin-bottom:10px;
+}
+.tour-img-box3{
+    width:135px;
+    height:150px;
+    margin-right:10px;
+    position: relative;
+    float:left;
+}
+.tour-word-box3{
+    display:none;
+    width:135px;
+    height:150px;
+    position: absolute;
+    bottom:-150px;
+    background: rgba(255, 121, 25, .9);
+    padding:20px 10px;
+    box-sizing: border-box;
+    font-size:14px;
+    color:#fff;
+    transition-duration: .2s;
+}
+.tour-img-box3:hover .tour-word-box3{
+    display:block;
+    bottom:0;
+}
+.tour-img-box4{
+    width:309px;
+    height:150px;
+    position: relative;
+    float:left;
+}
+.tour-word-box4{
+    display:none;
+    width:310px;
+    height:150px;
+    position: absolute;
+    bottom:-150px;
+    background: rgba(255, 121, 25, .9);
+    padding:20px 10px;
+    box-sizing: border-box;
+    font-size:14px;
+    color:#fff;
+    transition-duration: .2s;
+
+}
+.tour-img-box4:hover .tour-word-box4{
+    display:block;
+    bottom:0;
+}
+.tour-img-box5{
+    margin-right:10px;
+}
+.tour-img-box6{
+    margin-right:0
+}
+/* tour-con4 */
+.tour-con4{
+    width:282px;
+    height:310px;
+    float: left;
+    
+}
+.tour-img-box7{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.tour-img8{
+    height:310px;
+}
+.tour-word-box5{
+    display:none;
+    width:282px;
+    height:310px;
+    position: absolute;
+    bottom:-310px;
+    background: rgba(255, 121, 25, .9);
+    padding:20px 10px;
+    box-sizing: border-box;
+    font-size:14px;
+    color:#fff;
+    transition-duration: .2s;
+}
+.tour-con4:hover .tour-word-box5{
+    display:block;
+    bottom:0;
+}
+/* 演唱会 */
+.concert{
+    width:100%;
+    background: #fafafa;
+}
+.concert-con{
+    width:1200px;
+    margin:0 auto;
+    padding:47px 0 40px;
+    box-sizing: border-box;
+}
+.concert-title{
+    width:78px;
+    margin:0 auto;
+    font-size:26px;
+    color:#333;
+}
+.concert-title2{
+    width:327px;
+    margin:32px auto;
+    
+}
+.concert-title2-a{
+    font-size:12px;
+    color:#b2b2b2;
+    padding:0 12px;
+    border-right: 2px solid #f1f1f1;
+}
+.concert-title2-lasta{
+    border-right: none;
+}
+.concert-content1{
+    margin-bottom:29px;
+}
+.more{
+    padding-top:15px;
+}
+.hot{
+    width:523px;
+    box-sizing: border-box;
+    padding:20px 10px 0 15px;
+    border:1px solid #eeeeee;
+    border-top:1px solid #ff7919;
+}
+.hot-top{
+    font-size:18px;
+    color:#333;
+    margin-bottom:25px;
+}
+.hot-top-left{
+    float:left;
+}
+.hot-top-right{
+    float:right;
+}
+.hot-top-circle{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: #ebebeb;
+    float:left;
+    margin-right:8px;
+}
+div.active{
+    background: #ff7919;
+}
+.hot-down{
+    width:523px;
+    overflow: hidden;
+    padding-bottom: 18px;
+}
+.hot-down-ul{
+    width:1470px;
+}
+.hot-down-li{
+    width:490px;
+    float:left;
+}
+.hot-down-left{
+    width:147px;
+    /* height: 126px; */
+    border-right:1px dashed #eeeeee;
+    float:left;
+}
+.hot-down-litleft{
+    width:80px;
+    margin:0 auto;
+    text-align:center;
+}
+.hot-down-img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin-bottom:8px;
+}
+.hot-down-left-p1{
+    font-size: 16px;
+    color:#333;
+    margin-bottom: 8px;
+}
+.hot-down-left-p2{
+    font-size: 12px;
+    color:#b2b2b2;
+}
+.hot-down-right{
+    float:right;  
+    margin-left:40px; 
+}
+.hot-down-right-a1{
+    font-size: 16px;
+    color:#333;
+    
+}
+.hot-down-right-a2{
+    font-size: 14px;
+    color:#b2b2b2;
+}
+.hot-down-right-p{
+    margin-top:10px;
+}
+.line{
+    display:inline-block;
+    width:300px;
+    height:2px;
+    background: #f0f0f0;
+    margin:15px 0 10px ;
+}
+.hdr-p{
+    margin-bottom:15px;
+}
+.hot-down-right-circle{
+    position: relative;
+    z-index: 1;
+    border: 2px solid #b3d21e;
+    top:-7px;
+    left:10px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
 }
