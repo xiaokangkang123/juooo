@@ -857,7 +857,10 @@ h5 a{
 /* 演唱会 */
 .concert{
     width:100%;
-    background: #fafafa;
+    
+}
+._concert{
+    background: #fafafa
 }
 .concert-con{
     width:1200px;
@@ -897,6 +900,9 @@ h5 a{
     padding:20px 10px 0 15px;
     border:1px solid #eeeeee;
     border-top:1px solid #ff7919;
+}
+.hot-fl{
+    float:left;
 }
 .hot-top{
     font-size:18px;
@@ -994,4 +1000,211 @@ div.active{
     width: 12px;
     height: 12px;
     background-color: #fff;
+}
+.hot-fr{
+    float:right;
+}
+.hot-top-right-dy{
+    font-size: 18px;
+    color:#b2b2b2;
+}
+.hot-top-right-dy:hover{
+    color:#ff7919;
+}
+
+.hot-down-little{
+    width:500px;
+    
+}
+.hot-down-little-top{
+    padding-bottom: 5px;
+    border-bottom:1px dashed #ededed
+}
+.hot-down-little-left{
+    width:128px;
+    float:left;
+}
+.hot-down-little-img{
+    width:128px;
+}
+.hot-down-little-right{
+    width:357px;
+    float:left;
+    margin-left: 15px;
+}
+.hot-down1-right-a{
+    font-size: 16px;
+    color:#333;
+}
+.hot-down1-right-p2{
+    font-size: 14px;
+    color: #b2b2b2;
+    margin-top:10px;
+}
+.hot-down-little-down{
+    padding-top:8px;
+}
+.hot-down2-p{
+    margin-bottom:5px;
+    font-size:14px;
+    
+}
+.hot-down2-span1{
+    margin-right:12px;
+    color:#b2b2b2;
+}
+.hot-down2-span2{
+    font-size:14px;
+    color:#333;
+}
+.lookmore{
+    width:160px;
+    height:40px;
+    line-height:40px;
+    margin: 45px auto 0;
+    border:2px solid #efefef;
+    border-radius:50px;
+    text-align:center;
+    background: #fff;
+}
+.look-more-a{
+    font-size: 16px;
+    color:#999;
+}
+.lookmore:hover{
+    border:2px solid #ff7919;
+}
+.lookmore:hover .look-more-a{
+    color: #ff7919;
+}
+
+/* 民谣&摇滚 */
+.rock{
+    background: #fff
+}
+.rock-title{
+    width:127px;
+    margin:0 auto;
+    font-size:26px;
+    color:#333;
+}
+.rock-word-box{
+    width:220px;
+    position: absolute;
+    height:68px;
+    text-align: center;
+    background-color: #ff3838;
+    background-color: rgba(255, 56, 56, .9);
+    display:none;;
+    padding:13px 12px;
+    box-sizing: border-box;
+    bottom:-68px;
+    transition-duration: .2s;
+    
+}
+.img-box:hover .rock-word-box{
+    display:block;
+    bottom:0;
+    
+}
+.rock-span2{
+    font-size:14px;
+    color:#ff3838;
+}
+.rock-span3{
+    font-size:18px;
+    color:#ff3838;
+}
+/* 话剧 */
+/* drama */
+.hj-title{
+    width:153px;
+    margin:0 auto;
+    font-size:26px;
+    color:#333;
+}
+.dramer{
+    background: #fafafa;
+}
+.dramer-word-box{
+    width:220px;
+    position: absolute;
+    height:68px;
+    text-align: center;
+    background-color: #5ab7e8;
+    background-color: rgba(90, 183, 232, .9);
+    display:none;;
+    padding:13px 12px;
+    box-sizing: border-box;
+    bottom:-68px;
+    transition-duration: .2s;
+}
+.img-box:hover .dramer-word-box{
+    display:block;
+    bottom:0;
+    
+}
+.dramer-span2{
+    font-size:14px;
+    color:#5ab7e8;
+}
+.dramer-span3{
+    font-size:18px;
+    color:#5ab7e8;
+}
+/* 音乐会 */
+.music{
+    background: #fff;
+}
+/* 儿童剧 */
+.ertong{
+    background:#fafafa
+}
+.child-word-box{
+    width:220px;
+    position: absolute;
+    height:68px;
+    text-align: center;
+    background-color: #90cb55;
+    background-color: rgba(144, 203, 85, .9);
+    display:none;;
+    padding:13px 12px;
+    box-sizing: border-box;
+    bottom:-68px;
+    transition-duration: .2s;
+    
+}
+.img-box:hover .child-word-box{
+    display:block;
+    bottom:0;
+    
+}
+.child-span2{
+    font-size:14px;
+    color:#90cb55;
+}
+.child-span3{
+    font-size:18px;
+    color:#90cb55;
+}
+/* 关于我们 */
+.us{
+    width:100%;
+    background: #fff;
+    border-top: 2px solid #f5f5f5;
+    padding:20px 0 26px;
+    box-sizing: border-box;
+}
+.us-little{
+    width:1200px;
+    margin: 0 auto;
+}
+.us-left{
+    padding-top:20px;
+    box-sizing: border-box;
+}
+.us-left-p1{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 28px;
 }
