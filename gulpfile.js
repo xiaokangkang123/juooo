@@ -13,12 +13,13 @@ gulp.task("css",()=>{
 // });
 // 实时刷新
 gulp.task("html",()=>{
-    return gulp.src("index.html").pipe(gulp.dest("dist/"))
+    return gulp.src("*.html").pipe(gulp.dest("dist/"))
     .pipe(connect.reload())
 });
 gulp.task("watch",()=>{
-    gulp.watch("index.html","html")
-    // gulp.watch("sass/*.scss",["html","sass"])
+    gulp.watch("*.html",["html"])
+    gulp.watch("css/*.css",["html","css"])
+    // gulp.watch("register.html",["html"])
 });
 const connect=require("gulp-connect");
 gulp.task('connect',function(){
@@ -61,14 +62,6 @@ gulp.task("images",()=>{
 // })
 // "!表示这个文件不压缩
 
-// gulp 服务器插件;
-// const connect = require("gulp-connect");
-// gulp 合并插件;
-// var concat = require('gulp-concat');
-// gulp 压缩插件;
-// var uglify = require("gulp-uglify");
-// babel 插件;
-// var babel = require("gulp-babel");
 
 // 编译：es6=>es5
 // babel插件

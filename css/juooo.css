@@ -826,6 +826,7 @@ button.active1{
     font-size:14px;
     color:#fff;
     transition-duration: .2s;
+   
 }
 .tour-img-box3:hover .tour-word-box3{
     display:block;
@@ -1574,11 +1575,6 @@ button.active{
 .right-box-a4{
     background-position: 0 -465px;
 }
-.right-box-aa2{
-    position: absolute;
-    width:100px;
-    height:100px;
-    top: 54px;
-    background-position: -60px -8px;
-    margin-top: -45px;
+.right-box2:hover{
+    background: #ff7919;
 }
