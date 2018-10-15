@@ -1,0 +1,12 @@
+*{ margin:0; padding:0;}
+body{ font-family:"微软雅黑" }
+em,i,{ font-style:normal;}
+ul,li,dl,ol{ list-style:none}
+a{text-decoration:none;}
+.clearfix::after{
+    content:".";
+    height:0;
+    visibility:hidden;
+    clear:both;
+    display:block;
+}
