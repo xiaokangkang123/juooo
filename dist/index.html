@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/juooo.css">
 </head>
 <body>
+    <div class="body-little" id="oBody"></div>
     <!-- 导航 -->
     <div class="nav">
         <div class="nav-little">
@@ -18,10 +19,10 @@
             <div class="nav-fr clearfix">
                 <ul class="ul-first clearfix">
                     <li class="li-first li-first-hover">
-                        <a href="#" class="li-first-a">登录</a>
+                        <a href="#" class="li-first-a" id="_login">登录</a>
                     </li>
                     <li class="li-first li-first-hover">
-                        <a href="#" class="li-first-a">注册</a>
+                        <a href="register.html" class="li-first-a">注册</a>
                     </li>
                     <li class="li-first li-first-hover">
                         <a href="#" class="li-first-a">我的订单</a>
@@ -2247,10 +2248,55 @@
             <a href="#" class="right-box-a right-box-a4"></a>
         </div>
     </div>
+    </div>
+    </div>
+    <!-- 登录页面 -->
+    <div class="login">
+        <div class="login-little clearfix" id="login">
+            <div class="close">
+                <a href="#" class="close-a">
+                    <img src="images/close.png" alt="" class="close-img" id="close-img">
+                </a>
+            </div>
+            <div class="login-little-">
+                <div class="login-top">
+                    <h1>会员登录</h1>
+                    <span class="login-span login-span1">还不是聚橙会员？</span>
+                    <span class="login-span1">
+                        <a href="register.html" class="login-top-a">点击注册</a>
+                    </span>
+                </div>
+                <div class="email">
+                    <img src="images/pwd.png" alt="" class="email-img">
+                    <input type="text" class="email-input" placeholder="注册邮箱/手机号">
+                </div>
+                <div class="email">
+                    <img src="images/lock.png" alt="" class="email-img">
+                    <input type="text" class="email-input" placeholder="登录密码">
+                </div>
+                <div class="forget clearfix">
+                    <a href="#" class="forget-a">忘记密码？</a>
+                </div>
+                <div class="_login">
+                    <a href="#" class="_login-a">登录</a>
+                </div>
+                <div class="_footer clearfix">
+                    <p class="_footer-p">使用合作账号登录：</p>
+                    <a href="#" class="_footer-a">
+                        <img src="images/qq.png" alt="" class="_footer-img">
+                        <img src="images/wb.png" alt="" class="_footer-img">
+                        <img src="images/wx.png" alt="" class="_footer-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jQuery.js"></script>
     <script src="js/lunbo1.js"></script>
     <script src="js/lunbo2.js"></script>
     <script src="js/lunbo3.js"></script>
     <script src="js/lunbo4.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
