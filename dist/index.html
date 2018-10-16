@@ -2143,6 +2143,7 @@
             </div>
         </div>
     </div>
+    
     <!-- 关于我们 -->
     <div class="us clearfix">
         <div class="us-little clearfix">
@@ -2232,6 +2233,7 @@
             </div>
         </div>
     </div>
+
     <!-- 右悬浮框 -->
     <div class="right-box">
         <div class="right-box1">
@@ -2268,16 +2270,16 @@
                 </div>
                 <div class="email">
                     <img src="images/pwd.png" alt="" class="email-img">
-                    <input type="text" class="email-input" placeholder="注册邮箱/手机号">
+                    <input type="text" class="email-input" placeholder="注册邮箱/手机号" id="email">
                 </div>
                 <div class="email">
                     <img src="images/lock.png" alt="" class="email-img">
-                    <input type="text" class="email-input" placeholder="登录密码">
+                    <input type="text" class="email-input" placeholder="登录密码" id="pwd">
                 </div>
                 <div class="forget clearfix">
                     <a href="#" class="forget-a">忘记密码？</a>
                 </div>
-                <div class="_login">
+                <div class="_login"  id="login-btn-">
                     <a href="#" class="_login-a">登录</a>
                 </div>
                 <div class="_footer clearfix">
@@ -2292,11 +2294,24 @@
         </div>
     </div>
 
+
+    <!-- 瀑布流 -->
+    <div class="waterFall">
+        <ul class="water-ul clearfix" id="water-ul">
+            <li class="water-li">
+                <img src="#" alt="" class="water-img">
+                <p class="water-title"></p>
+            </li>
+        </ul>
+    </div>
     <script src="js/jQuery.js"></script>
     <script src="js/lunbo1.js"></script>
     <script src="js/lunbo2.js"></script>
     <script src="js/lunbo3.js"></script>
     <script src="js/lunbo4.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/login_1.js"></script>
+    <!-- <script src="js/pubuliu.js"></script> -->
 </body>
 </html>

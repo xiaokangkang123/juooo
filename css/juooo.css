@@ -1699,3 +1699,25 @@ h1{
     opacity: .3;
     display: none;
 }
+/* 瀑布流 */
+.waterFall{
+    width:1200px;
+    margin:20px auto;
+    position: relative;
+}
+.water-ul{
+    
+}
+.water-li{
+    width: 220px;
+    margin-right: 20px;
+    float: left;
+}
+.water-img{
+    width:220px;
+    height:270px;
+}
+.water-title{
+    font-size: 14px;
+    color: #333;
+}
