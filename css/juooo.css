@@ -121,6 +121,9 @@ h5 a{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.ul-li-left-a:hover{
+    color:#ff7919;
+}
 .second-ul-li3{
     width:420px;
     height:421px;

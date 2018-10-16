@@ -4,6 +4,11 @@ gulp.task("css",()=>{
     return gulp.src(["css/*.css"])
     .pipe(gulp.dest("dist/css"))
 });
+//转存php
+gulp.task("php",()=>{
+    return gulp.src(["php/*.php"])
+    .pipe(gulp.dest("dist/php"))
+});
 // 压缩css
 // var cleanCss=require("gulp-clean-css")
 // gulp.task("css",()=>{
