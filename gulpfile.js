@@ -24,7 +24,7 @@ gulp.task("html",()=>{
 gulp.task("watch",()=>{
     gulp.watch("*.html",["html"])
     gulp.watch("css/*.css",["html","css"])
-    // gulp.watch("register.html",["html"])
+    gulp.watch("js/*.js",["script"])
 });
 const connect=require("gulp-connect");
 gulp.task('connect',function(){

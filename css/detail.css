@@ -286,52 +286,153 @@
  /* 详情区 */
  .detail{
      width:100%;
-     /* background: #ebebeb; */
-     padding-top:20px;
      box-sizing: border-box;
  }
  .detail-little{
     padding-top:20px;
-    padding-left:10px;
+    padding-bottom: 20px;
+    padding-left:20px;
     box-sizing: border-box;
     width:1200px;
     margin:0 auto;
-    background: #ebebeb;
+    /* background: #f7f7f7; */
  }
  .detail-left{
      width:280px;
      height:280px;
      position: relative;
      float: left;
-     margin-right: 30px;
+     margin-right: 50px;
+     box-shadow: 0 0 5px #000;
+     border-radius: 5px;
  }
  .detail-img{
     width:280px;
     height:280px;
+    border-radius: 5px;
  }
  .frame{
-    width:120px;
-    height:120px;
+    width:140px;
+    height:140px;
     position: absolute;
     z-index:1;
     top:0;
     left:0;
     box-shadow: 0 0 8px #000;
     display:none;
+    border-radius: 5px;
+    background-image: url(../images/detail2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px 280px;
+ }
+ .film{
+    width:280px;
+    height:280px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 111;
+    cursor: none;
+    
+    
  }
  .detail-right{
     float: left;
+    position: relative;
  }
  .img-box{
     width:280px;
     height:280px;
     overflow: hidden;
-    position: relative; 
+    box-shadow: 0 0 5px #000;
+    position: absolute;; 
     display:none;
+    border-radius: 5px;
+    z-index:111;
  }
  .detail-img-big{
     width:560px;
     height:560px;
     position: absolute;
+    left:0;
+    top:0;
  }
+ .word-box-top{
+    /* position:absolute; */
+    color: #999;
+    font-size: 14px;
+    padding-bottom:10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fcc2ae;
+ }
+ .word-top-p1{
+    color: #333;
+    font-size: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+ }
+ .word-top-p2{
+    padding-bottom: 15px;
+    box-sizing: border-box;
+ }
+ .word-top-span1{
+     margin-right:20px;
+ }
+ .support-i{
+    display:inline-block;
+    margin-right:5px;
+    vertical-align: middle;
+ }
+ .word-top-span2{
+     margin-right:10px;
+ }
+ .support-i1{
+    width:24px;
+    height:18px;
+    background-image: url(../images/car.png);
+    
+ }
+ .support-i2{
+    width:21px;
+    height:18px;
+    background-image: url(../images/dollar.png); 
+ }
+ .support-i3{
+    width:18px;
+    height:16px;
+    background-image: url(../images/card.png); 
+ }
+ .word-box-dowm{
+    font-size:14px;
+    padding-top:20px;
+    padding-bottom:10px;
+    box-sizing: border-box;
+    background:#fffdfa;
+ }
+ .word-down1{
+     padding-bottom:20px;
+     box-sizing: border-box;
+ }
+ .word-down-span1{
+     display: inline-block;
+     width:100px;
+     color:#999;
+ }
+ .word-down2{
+    width:144px;
+    height:42px;
+    line-height:42px;
+    text-align:center;
+    background: #ff852d;
+    border-radius: 5px;
+    margin-left:200px;
+ }
+ .word-down3-a{
+    color:#fff;
+ }
+ .word-down-span2{
+    color:#999;
+    margin-right:10px;
+ }
+
  
