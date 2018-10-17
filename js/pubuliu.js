@@ -70,16 +70,19 @@ $.extend(waterFall.prototype,{
         // 最后一张图片;
         // 当前屏幕的高度;
         // console.log(this.ifLoad)
-        var scrollTop = $("html,body").scrollTop();
+        var scrollTop = $(window).scrollTop();
+        // console.log(scrollTop)
         var clientHeight = $("html")[0].clientHeight;
         var lastBox = this.main.children(":last");
+        // console.log(lastBox)
         this.loading = false;
-        // console.log(scrollTop,clientHeight,lastBox.offset());
+        console.log(scrollTop,clientHeight,lastBox.offset());
         if(scrollTop + clientHeight > lastBox.offset().top){
             // 加载数据;
             if(this.loading){
                 return 0;
             }
+            // console.log(scrollTop)
             this.loading = true;
             // console.log("加载");
             this.page ++;

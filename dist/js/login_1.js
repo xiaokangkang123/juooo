@@ -10,9 +10,12 @@ var oBtn=document.getElementById("login-btn-");
 console.log(oBtn)
 
 oBtn.onclick=function(){
-    var url="http://localhost:8888/proxy/localhost/php/login.php";
-    ajaxPost(url,`username=${oInp1.value}&password=${oInp2.value}`)
-    .then(function(res){
-        alert(res)
+    $.ajax({
+        url:"http://localhost:8888/proxy/localhost/php/login.php",
+        type:"GET",
+        data:`username=${oInp1.value}&password=${oInp2.value}`,
+        success:function(res){
+            alert(res)
+        }
     })
 }

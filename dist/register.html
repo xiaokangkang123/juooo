@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <script src="js/ajax.js"></script>
+    <script src="js/jQuery.js"></script>
     <script>
         var oInp1=document.getElementById("phone");
         
@@ -95,12 +95,18 @@
         var oBtn=document.getElementById("btn");
         
         oBtn.onclick=function(){
-            var url="http://localhost:8888/proxy/localhost/php/register.php";
-            ajaxPost(url,`username=${oInp1.value}&password=${oInp4.value}`)
-            .then(function(res){
+            $.ajax({
+            url:"http://localhost:8888/proxy/localhost/php/register.php",
+            type:"GET",
+            data:`username=${oInp1.value}&password=${oInp4.value}`,
+            datatype:"html",
+            success:function(res){
                 alert(res)
-            })
+            }
+        })
+
         }
     </script>
+    
 </body>
 </html>

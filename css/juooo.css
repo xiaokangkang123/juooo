@@ -1600,7 +1600,7 @@ button.active{
 }
 .close-a:hover .close-img{
     transform: rotate(90deg);
-    -webkit-transition-duration: .5s;
+    -webkit-transition-duration: .3s;
 }
 .login-little-{
     width:365px;

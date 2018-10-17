@@ -58,29 +58,33 @@ $.extend(waterFall.prototype,{
             
         }
         this.main.html(this.main.html() + html);
- 
+        this.loading = true;
     },
     // 绑定事件
     bindEvent(){
         $(window).on("scroll",this.ifLoad.bind(this));
     },
     ifLoad(){
+        // console.log(1);
+        // scrollTop ;
         // 最后一张图片;
         // 当前屏幕的高度;
         // console.log(this.ifLoad)
         var scrollTop = $(window).scrollTop();
+        // console.log(scrollTop)
         var clientHeight = $("html")[0].clientHeight;
         var lastBox = this.main.children(":last");
-        //console.log(lastBox)
+        // console.log(lastBox)
         this.loading = false;
-        //console.log(scrollTop,clientHeight,lastBox.offset());
+        console.log(scrollTop,clientHeight,lastBox.offset());
         if(scrollTop + clientHeight > lastBox.offset().top){
             // 加载数据;
             if(this.loading){
                 return 0;
             }
+            // console.log(scrollTop)
             this.loading = true;
-            console.log("加载");
+            // console.log("加载");
             this.page ++;
             this.loadJson()
             .done(function(res){
