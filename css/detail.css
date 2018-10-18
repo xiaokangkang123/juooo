@@ -321,7 +321,7 @@
     box-shadow: 0 0 8px #000;
     display:none;
     border-radius: 5px;
-    background-image: url(../images/detail2.jpg);
+    /* background-image: url(json[res].image); */
     background-repeat: no-repeat;
     background-size: 280px 280px;
  }

@@ -33,13 +33,13 @@ $.extend(waterFall.prototype,{
         for(i=0;i<json.length;i++){
             // console.log(data[i].image,data[i].title,data[i].price)
             html+=`
-            <li class="render-li clearfix">
+            <li class="render-li clearfix" id="list">
                 <div class="render-li-left">
-                    <img src="${json[i].image}" alt="" class="render-img">
+                    <img src="${json[i].image}" alt="" class="render-img" data-id="${i}" id="img">
                 </div>
                 <div class="render-li-center">
                     <p class="render-center-p">
-                        <a href="../detail.html" class="render-center-a">
+                        <a href="#" class="render-center-a">
                             OLive橄榄现场呈现·2018杨乃文“BACK TO FAITH+”信念回归巡回演唱会
                         </a>
                     </p>
@@ -97,3 +97,22 @@ $.extend(waterFall.prototype,{
 })
 var waterfall = new waterFall();
 waterfall.init();
+
+//页面跳转；
+// 选中元素绑定事件;
+var oList = document.getElementById("list");
+// 委托;
+
+oList.onclick = function(evt){
+    var e = evt || window.event;
+    var img = document.querySelectorAll("#list img");
+    var imgArray = Array.from(img);
+    var target = e.target || e.srcElement;
+ //    console.log(imgArray);   
+     if(imgArray.indexOf(target) != -1){
+         // 页面跳转;
+         // 先要储存cookie;
+         cookie("goodsId",target.getAttribute("data-id"));
+         location.href = "../detail.html";
+     }
+}
