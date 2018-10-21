@@ -5,7 +5,6 @@ $.extend(waterFall.prototype,{
         this.page=1;
         this.main=$("#list");
         this.loading=false;
-        
         this.loadJson()
         .done(function(res){
             this.renderPage(res)
@@ -101,6 +100,7 @@ waterfall.init();
 //页面跳转；
 // 选中元素绑定事件;
 var oList = document.getElementById("list");
+console.log(oList)
 // 委托;
 
 oList.onclick = function(evt){

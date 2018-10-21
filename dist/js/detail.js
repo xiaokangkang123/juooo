@@ -71,22 +71,27 @@ $.extend(waterFall.prototype,{
         }
         return $.ajax(opt);
     },
+    //渲染页面
     renderPage(json){
         var oImg = document.getElementById("smallImg");
         var oImg1 = document.getElementById("bigImg");
-        console.log(oImg)
+        var oFilm=document.getElementById("film");
+        console.log(oFrame)
+        // console.log(oImg)
         // var res = "";
         if(cookie("goodsId")){
-            res = cookie("goodsId")
+            var res = cookie("goodsId")
             console.log(res,json[res]);
             oImg.src = json[res].image;
-            // oP.innerHTML = data[res].title;
             oImg1.src = json[res].image;
+            // oFrame.style.backgroundImage=json[res].image;
         }
+        
     }
    
 })
 var waterfall = new waterFall();
 waterfall.init();
+
 
 
